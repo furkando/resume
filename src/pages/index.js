@@ -27,7 +27,7 @@ export default function Home() {
         <title>Furkan Doğan</title>
         <link
           rel="image_src"
-          href="http://furkandoganktf.github.io/images/profilePicture.jpg"
+          href="https://furkandoganktf.github.io/resume/images/profilePicture.jpg"
         />
         <meta
           name="description"
@@ -43,13 +43,13 @@ export default function Home() {
         <meta property="og:type" content="profile" />
         <meta
           property="og:image"
-          content="http://furkandoganktf.github.io//images/profilePicture.jpg"
+          content="https://furkandoganktf.github.io/resume/images/profilePicture.jpg"
         />
         <meta property="og:image:width" content="1580" />
         <meta property="og:image:height" content="790" />
         <meta
           name="twitter:image"
-          content="http://furkandoganktf.github.io//images/profilePicture.jpg"
+          content="https://furkandoganktf.github.io/resume/images/profilePicture.jpg"
         />
       </Head>
       <Modal />

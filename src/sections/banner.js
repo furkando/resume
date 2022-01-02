@@ -31,7 +31,10 @@ export default function Banner() {
           <div className={`${styles.buttons}`}>
             <div>
               <button className={`${styles.but}`}>
-                <a target="_blank" href="/pdf/furkan_dogan_resume.pdf">
+                <a
+                  target="_blank"
+                  href="https://furkandoganktf.github.io/resume/pdf/furkan_dogan_resume.pdf"
+                >
                   DOWNLOAD RESUME
                 </a>
               </button>
@@ -56,7 +59,10 @@ export default function Banner() {
           </div>
         </section>
         <figure className={styles.bannerContRight}>
-          <img alt="Furkan Doğan" src="/images/profilePicture.jpg" />
+          <img
+            alt="Furkan Doğan"
+            src="https://furkandoganktf.github.io/resume/images/profilePicture.jpg"
+          />
         </figure>
       </div>
     </section>

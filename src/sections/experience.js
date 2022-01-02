@@ -11,8 +11,8 @@ export default function Experience({ resumeData }) {
       <div className="cardContainer">
         <div className="card">
           <div className="cardContent">
-            {resumeData.resume.work.map((item) => (
-              <div className="cardCont">
+            {resumeData.resume.work.map((item, index) => (
+              <div className="cardCont" key={index}>
                 <h5>
                   <span>
                     <FontAwesomeIcon icon={faCalendarAlt} /> {item.years}

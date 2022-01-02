@@ -26,6 +26,11 @@ export default function Home() {
       <Head>
         <title>Furkan Doğan</title>
         <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://furkandoganktf.github.io/resume/favicon.ico"
+        />
+        <link
           rel="image_src"
           href="https://furkandoganktf.github.io/resume/images/profilePicture.jpg"
         />

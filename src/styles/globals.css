@@ -368,6 +368,15 @@ a {
 
 .readingCardDescription {
   padding: 1.2em;
+  position: relative;
+  height: 30%;
+}
+
+.readingCardUrlButton {
+  position: absolute;
+  right: 1.2em;
+  bottom: 1.2em;
+  float: right;
 }
 
 @media (max-width: 1223px) {

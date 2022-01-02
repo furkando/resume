@@ -22,6 +22,12 @@ export default function Readings({ readingList }) {
 
                     <div className="readingCardDescription">
                       <span>{item.description}</span>
+
+                      <button className={`${styles.but} readingCardUrlButton`}>
+                        <a target="_blank" href={item.url}>
+                          Read More!
+                        </a>
+                      </button>
                     </div>
                   </div>
                 ))}

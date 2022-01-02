@@ -11,7 +11,7 @@ export default function Education({ resumeData }) {
       <div className="cardContainer">
         <div className="card">
           <div className="cardContent">
-            {resumeData.resume.education.map((index, item) => (
+            {resumeData.resume.education.map((item, index) => (
               <div className="cardCont" key={index}>
                 <h5>
                   <span>

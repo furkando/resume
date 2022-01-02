@@ -36,7 +36,7 @@ export default function Modal() {
     e.preventDefault();
     const emailjsObj = {
       serviceId: "gmail",
-      templateId: "template_aRfTvlUy",
+      templateId: process.env.NEXT_PUBLIC_TEMPLATE_ID,
       userId: process.env.NEXT_PUBLIC_USER_ID,
     };
     try {

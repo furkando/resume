@@ -4,7 +4,8 @@ import styles from "../styles/banner.module.css";
 export default function Readings({ readingList }) {
   return (
     <section className="container">
-      <div id="reading" className="containerCont sectionCont">
+      <div className="containerCont sectionCont">
+        <div id="reading" className="target"></div>
         <header>
           <h2>Reading List</h2>
         </header>

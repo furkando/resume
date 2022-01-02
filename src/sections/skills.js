@@ -4,7 +4,7 @@ import CircularProg from "../components/circularProg";
 export default function Skills({ resumeData }) {
   return (
     <section className="sectionCont sectionContEducation">
-      <div className=" sectionCont sectionContSkills">
+      <div className="sectionCont sectionContSkills">
         <header>
           <h2>Skills</h2>
         </header>

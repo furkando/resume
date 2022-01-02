@@ -2,5 +2,6 @@ module.exports = {
   devIndicators: {
     autoPrerender: false,
   },
-  assetPrefix: "./",
+  basePath: "/resume",
+  assetPrefix: "/resume/",
 };

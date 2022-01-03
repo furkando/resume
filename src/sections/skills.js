@@ -18,11 +18,11 @@ export default function Skills({ resumeData }) {
                 ))}
               </ul>
               <h3 className="overallHeader">Overall</h3>
-              <ul className="rowFlexRes breakOverall">
+              <div className="rowFlexRes breakOverall">
                 {resumeData.resume.overallSkills.map((skill) => (
                   <CircularProg key={skill.name} skill={skill} />
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>

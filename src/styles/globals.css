@@ -238,6 +238,7 @@ a {
 
 /*Skills*/
 .circleSkillContainer {
+  max-width: 33.3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,11 +246,13 @@ a {
 }
 
 .circularProgress {
-  width: 130px;
+  width: 80%;
 }
+
 .circularProgressSkill {
   margin-top: 8px;
   text-align: center;
+  font-size: 1em;
 }
 .sectionContSkills > div:nth-child(2) {
   margin-bottom: 2em;
@@ -339,6 +342,10 @@ a {
   margin-top: 0;
 }
 
+.breakMainTechOverall .cardContainer {
+  max-width: unset !important;
+}
+
 /*Reading*/
 
 .readingContainer {
@@ -346,6 +353,14 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.readingShowMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .readingCard {
@@ -430,6 +445,12 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
+  .readingCard {
+    width: 45%;
+  }
+  .circularProgressSkill {
+    font-size: 0.8em;
+  }
 }
 @media (max-width: 984px) {
   .sectionContExperience {
@@ -491,6 +512,9 @@ a {
 }
 
 @media (max-width: 660px) {
+  .readingCard {
+    width: 85%;
+  }
   .breakExpEduc {
     flex-direction: column;
     justify-content: flex-start;
@@ -506,13 +530,13 @@ a {
   .sectionContEducation .card {
     padding-right: 1.2em;
     padding-left: 1.8em;
-    max-width: 470px;
+    /* max-width: 470px; */
     margin-right: auto;
     margin-left: auto;
   }
   .breakOverall {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
   }
   .sectionContSkills .cardContainer:nth-child(2) .card > ul:nth-child(2) li {
     width: 120px;

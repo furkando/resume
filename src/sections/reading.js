@@ -1,7 +1,22 @@
+import { useEffect, useState } from "react";
 import ShowMore from "react-show-more-list";
 import styles from "../styles/banner.module.css";
 
-export default function Readings({ readingList }) {
+export default function Readings() {
+  const [readingList, setReadingList] = useState([]);
+  useEffect(() => {
+    fetch("https://express-on-nodejs-1.furkandoganktf1.repl.co/list")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setReadingList(result);
+        },
+
+        (error) => {
+          console.log(error);
+        }
+      );
+  }, []);
   return (
     <section className="container">
       <div className="containerCont sectionCont">
@@ -32,6 +47,8 @@ export default function Readings({ readingList }) {
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="readingShowMore">
                 <button
                   disabled={!onMore}
                   onClick={() => {

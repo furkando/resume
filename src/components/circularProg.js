@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 export default function circularProg({ skill }) {
-  const [progress] = useState(70 + Math.floor(Math.random() * 30));
+  const [progress, setProgress] = useState(50);
+
+  useEffect(() => {
+    setProgress(70 + Math.floor(Math.random() * 30));
+  }, []);
 
   return (
     <div className="circleSkillContainer">

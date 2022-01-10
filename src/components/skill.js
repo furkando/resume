@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function Skill({ skill }) {
-  const [progress] = useState(50 + Math.floor(Math.random() * 50));
+  const [progress, setProgress] = useState(50);
+
+  useEffect(() => {
+    setProgress(50 + Math.floor(Math.random() * 50));
+  }, []);
+
   return (
     <li>
       <div className="rowFlexRes">

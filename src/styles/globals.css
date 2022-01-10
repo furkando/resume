@@ -395,6 +395,16 @@ a {
   float: right;
 }
 
+.readCardUrlButton {
+  background-color: aqua;
+}
+
+.readCardUrlButton {
+  background-color: var(--dark-black) !important;
+  color: var(--red) !important;
+  border: 1px var(--dark-black) solid !important;
+}
+
 @media (max-width: 1223px) {
   .sectionContExperience .card,
   .sectionContEducation .card {

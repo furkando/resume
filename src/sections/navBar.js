@@ -2,7 +2,7 @@ import styles from "../styles/navBar.module.css";
 import scrollIt from "../components/helpers";
 import Hamburger from "../components/hamburger";
 import { Contexto } from "../appContext";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 
 export default function NavBar() {
   const { navResOpen, setNavResOpen } = useContext(Contexto);

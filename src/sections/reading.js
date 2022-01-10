@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import ShowMore from "react-show-more-list";
 import styles from "../styles/banner.module.css";
 import styled, { keyframes } from "styled-components";
-import { fadeIn } from "react-animations";
+import { fadeInLeft } from "react-animations";
 
-const animationFrames = keyframes`${fadeIn}`;
+const animationFrames = keyframes`${fadeInLeft}`;
 const Animation = styled.div`
   animation: 5s ${animationFrames};
 `;
@@ -29,14 +29,14 @@ export default function Readings() {
   }, []);
 
   return (
-    <Animation>
-      <section className="container">
-        <div className="containerCont sectionCont">
-          <div id="reading" className="target"></div>
-          <header>
-            <h2>Reading List</h2>
-          </header>
+    <section className="container">
+      <div className="containerCont sectionCont">
+        <div id="reading" className="target"></div>
+        <header>
+          <h2>Reading List</h2>
+        </header>
 
+        <Animation>
           <ShowMore items={readList} by={3}>
             {({ current, onMore }) => (
               <React.Fragment>
@@ -98,8 +98,8 @@ export default function Readings() {
               </React.Fragment>
             )}
           </ShowMore>
-        </div>
-      </section>
-    </Animation>
+        </Animation>
+      </div>
+    </section>
   );
 }

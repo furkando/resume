@@ -1,6 +1,6 @@
 # furkandoganktf.github.io/resume
 
-This is a personal website which describes me and my reading list.
+This is a personal website which describes me and includes my reading list.
 
 # nextjs webResume
 

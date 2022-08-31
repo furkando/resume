@@ -321,9 +321,7 @@ a {
   margin-top: 0.6em;
   opacity: 0.9;
 }
-.overallHeader {
-  margin-top: 72px !important;
-}
+
 .sectionContSkills
   .cardContainer:nth-child(2)
   .card
@@ -621,4 +619,9 @@ a {
   width: 100%;
   margin-top: -3.58625rem;
   visibility: hidden;
+}
+
+.tooltip {
+  width: 100%;
+  max-width: 500px;
 }

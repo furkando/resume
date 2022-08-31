@@ -67,7 +67,6 @@ export default function Home() {
             <Experience resumeData={resumeData} />
             <div>
               <Education resumeData={resumeData} />
-              <div id="skills" className="target"></div>
               <Skills resumeData={resumeData} />
             </div>
           </div>

@@ -1,17 +1,50 @@
 import React, { useEffect, useState } from "react";
-import ShowMore from "react-show-more-list";
-import styles from "../styles/banner.module.css";
-import styled, { keyframes } from "styled-components";
+
+import dynamic from "next/dynamic";
 import { fadeInLeft } from "react-animations";
+import ShowMore from "react-show-more-list";
+import styled, { keyframes } from "styled-components";
+import styles from "../styles/banner.module.css";
+const ReactTooltip = dynamic(() => import("react-tooltip"), {
+  ssr: false,
+});
 
 const animationFrames = keyframes`${fadeInLeft}`;
 const Animation = styled.div`
   animation: 5s ${animationFrames};
 `;
 
+const DESCRIPTION_LENGTH = 200;
+
 export default function Readings() {
   const [readList, setReadList] = useState([]);
   const [notReadList, setNotReadList] = useState([]);
+
+  const renderDescription = (description) => {
+    if (description.length > DESCRIPTION_LENGTH) {
+      return (
+        <>
+          <ReactTooltip
+            effect={"solid"}
+            multiline
+            arrowColor="black"
+            className="tooltip"
+            id="readings"
+          />
+          <Animation>
+            <div data-tip={description} data-for="readings">
+              {description.substring(0, DESCRIPTION_LENGTH)}...
+            </div>
+          </Animation>
+        </>
+      );
+    }
+    return (
+      <Animation>
+        <div>{description}</div>
+      </Animation>
+    );
+  };
 
   useEffect(() => {
     fetch("https://express-on-nodejs-1.furkandoganktf1.repl.co/list")
@@ -35,7 +68,6 @@ export default function Readings() {
         <header>
           <h2>Reading List</h2>
         </header>
-
         <Animation>
           <ShowMore items={readList} by={3}>
             {({ current, onMore }) => (
@@ -50,7 +82,7 @@ export default function Readings() {
                       <img className="readingCardImg" src={item.image} />
 
                       <div className="readingCardDescription">
-                        <span>{item.description}</span>
+                        {renderDescription(item.description)}
 
                         <button
                           className={`${styles.but} readingCardUrlButton`}
@@ -71,7 +103,7 @@ export default function Readings() {
                       <img className="readingCardImg" src={item.image} />
 
                       <div className="readingCardDescription">
-                        <span>{item.description}</span>
+                        {renderDescription(item.description)}
 
                         <button
                           className={`${styles.but} readingCardUrlButton readCardUrlButton`}

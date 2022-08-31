@@ -11,7 +11,7 @@ const ReactTooltip = dynamic(() => import("react-tooltip"), {
 
 const animationFrames = keyframes`${fadeInLeft}`;
 const Animation = styled.div`
-  animation: 5s ${animationFrames};
+  animation: 2s ${animationFrames};
 `;
 
 const DESCRIPTION_LENGTH = 200;
@@ -69,31 +69,10 @@ export default function Readings() {
           <h2>Reading List</h2>
         </header>
         <Animation>
-          <ShowMore items={readList} by={3}>
+          <ShowMore items={[...notReadList, ...readList]} by={3}>
             {({ current, onMore }) => (
               <React.Fragment>
                 <div className="cardContainer readingContainer">
-                  {notReadList.map((item) => (
-                    <div key={item.url} className="card readingCard">
-                      <div className="readingCardTitle">
-                        <h5>{item.title}</h5>
-                      </div>
-
-                      <img className="readingCardImg" src={item.image} />
-
-                      <div className="readingCardDescription">
-                        {renderDescription(item.description)}
-
-                        <button
-                          className={`${styles.but} readingCardUrlButton`}
-                        >
-                          <a target="_blank" href={item.url}>
-                            Read More!
-                          </a>
-                        </button>
-                      </div>
-                    </div>
-                  ))}
                   {current.map((item) => (
                     <div key={item.url} className="card readingCard">
                       <div className="readingCardTitle">
@@ -106,10 +85,12 @@ export default function Readings() {
                         {renderDescription(item.description)}
 
                         <button
-                          className={`${styles.but} readingCardUrlButton readCardUrlButton`}
+                          className={`${styles.but} readingCardUrlButton ${
+                            item.isRead ? "readCardUrlButton" : ""
+                          }`}
                         >
                           <a target="_blank" href={item.url}>
-                            Read Again!
+                            {item.isRead ? "Read Again!" : "Read More!"}
                           </a>
                         </button>
                       </div>

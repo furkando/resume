@@ -9,32 +9,22 @@ const ReactTooltip = dynamic(() => import("react-tooltip"), {
 
 export default function Skills({ resumeData }) {
   return (
-    <section className="sectionCont sectionContEducation">
+    <section className="sectionCont sectionContEducation sectionContSkills">
+      <div id="skills" className="target"></div>
       <ReactTooltip effect={"solid"} type="light" id="skills" />
       <div className="sectionCont sectionContSkills">
         <header>
           <h2>Skills</h2>
         </header>
-        <div className=" breakMainTechOverall">
-          <div className="cardContainer">
+        <div className="breakMainTechOverall">
+          <div className="cardContainer skillsCard">
             <div className="card">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  marginBottom: "20px",
-                  marginTop: "15px",
-                }}
-              >
-                {/* TODO
-                    Fix inline stylings
-                */}
-
-                <h3 style={{ margin: "0px 10px 0px 0px" }}>Main Tech</h3>
+              <div className="mainTechCont">
+                <h3 className="skillsTitle">Main Tech</h3>
                 <div
                   data-tip={"(50 + Math.floor(Math.random() * 50))"}
                   data-for="skills"
+                  className="tooltipCont"
                 >
                   <FontAwesomeIcon icon={faExclamationCircle} />
                 </div>
@@ -44,23 +34,12 @@ export default function Skills({ resumeData }) {
                   <Skill key={skill.name} skill={skill} />
                 ))}
               </ul>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  marginBottom: "30px",
-                  marginTop: "45px",
-                }}
-              >
-                {/* TODO
-                    Fix inline stylings
-                */}
-
-                <h3 style={{ margin: "0px 10px 0px 0px" }}>Overall</h3>
+              <div className="overAllCont">
+                <h3 className="skillsTitle">Overall</h3>
                 <div
                   data-tip={"(70 + Math.floor(Math.random() * 30))"}
                   data-for="skills"
+                  className="tooltipCont"
                 >
                   <FontAwesomeIcon icon={faExclamationCircle} />
                 </div>

@@ -69,7 +69,7 @@ export default function Readings() {
           <h2>Reading List</h2>
         </header>
         <Animation>
-          <ShowMore items={[...notReadList, ...readList]} by={3}>
+          <ShowMore items={[...notReadList, ...readList]} by={6}>
             {({ current, onMore }) => (
               <React.Fragment>
                 <div className="cardContainer readingContainer">

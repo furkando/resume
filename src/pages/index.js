@@ -9,7 +9,6 @@ import Readings from "../sections/reading";
 import Modal from "../components/modal";
 import { Contexto } from "../appContext";
 import { resumeData } from "../data/resumeData";
-import { readingList } from "../data/readingList";
 import { useContext } from "react";
 
 export default function Home() {
@@ -63,15 +62,17 @@ export default function Home() {
         <Banner resumeData={resumeData} />
         <AboutMe resumeData={resumeData} />
         <section className="container">
-          <div className="containerCont rowFlexRes breakExpEduc">
-            <Experience resumeData={resumeData} />
+          <div className="containerCont rowFlexRes breakExpEduc sectionGroup">
             <div>
+              <Experience resumeData={resumeData} />
+            </div>
+            <div className="educationSkillCont">
               <Education resumeData={resumeData} />
               <Skills resumeData={resumeData} />
             </div>
           </div>
         </section>
-        <Readings readingList={readingList} />
+        <Readings />
       </main>
     </>
   );

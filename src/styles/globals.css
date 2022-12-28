@@ -75,7 +75,6 @@ a {
 /**/
 .sectionCont {
   font-size: 0.96rem;
-  margin-bottom: 3rem;
 }
 .sectionCont h2 {
   font-size: 2.56rem;
@@ -255,11 +254,14 @@ a {
   text-align: center;
   font-size: 1em;
 }
-.sectionContSkills > div:nth-child(2) {
-  margin-bottom: 2em;
+
+.sectionContSkills {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .sectionContSkills h3 {
-  margin-bottom: 1em;
   line-height: 0.97em;
 }
 .sectionContSkills .card {
@@ -341,6 +343,9 @@ a {
   margin-top: 0;
 }
 
+.breakMainTechOverall {
+  height: 100%;
+}
 .breakMainTechOverall .cardContainer {
   max-width: unset !important;
 }
@@ -429,8 +434,9 @@ a {
   }
 }
 @media (max-width: 1085px) {
+  .sectionContExperience,
   .sectionContEducation {
-    max-width: 390px;
+    max-width: 410px;
   }
 }
 @media (max-width: 1043px) {
@@ -470,7 +476,6 @@ a {
 @media (max-width: 900px) {
   .sectionCont {
     font-size: 1rem;
-    margin-bottom: 2.5rem;
   }
   .sectionCont h2 {
     font-size: 2.5rem;
@@ -624,4 +629,50 @@ a {
 .tooltip {
   width: 100%;
   max-width: 500px;
+}
+
+.educationSkillCont {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sectionGroup {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sectionContSkills {
+  height: 100%;
+  margin-bottom: 0.65rem;
+  margin-top: 1rem;
+}
+
+.mainTechCont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.overAllCont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+
+.skillsTitle {
+  margin: 0px 10px 0px 0px;
+}
+
+.skillsCard {
+  height: 100%;
+}
+
+.tooltipCont {
+  margin-left: 10px;
 }

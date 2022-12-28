@@ -15,7 +15,6 @@ export default function Education({ resumeData }) {
               <div className="cardCont" key={index}>
                 <h5>
                   <span>
-                    {" "}
                     <FontAwesomeIcon icon={faCalendarAlt} /> {item.startYear} -{" "}
                     {item.endYear}
                   </span>

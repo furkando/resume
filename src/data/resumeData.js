@@ -56,7 +56,7 @@ export const resumeData = {
         school: "Middle East Technical University",
         degree: "Computer Engineering Master",
         startYear: 2020,
-        endYear: "Present",
+        endYear: 2022,
       },
       {
         school: "Middle East Technical University",

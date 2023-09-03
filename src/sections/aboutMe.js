@@ -8,7 +8,7 @@ export default function AboutMe() {
     setIsOpen(true);
   }
 
-  const email = "furkandoganktf@gmail.com";
+  const email = "me@furkando.com";
   return (
     <section className="container">
       <div className="containerCont sectionCont sectionContAbout">

@@ -7,7 +7,7 @@ export const resumeData = {
     image: "profilePicture.jpg",
     contactmessage:
       "Here is where you should write your message to contact with me.",
-    email: "furkandoganktf@gmail.com",
+    email: "me@furkando.com",
     phone: "+90-531-356-1070",
     address: {
       street: "İncek",

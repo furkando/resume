@@ -6,7 +6,7 @@ import { Contexto } from "../appContext";
 
 export default function Banner() {
   const name = "Furkan Doğan";
-  const email = "furkandoganktf@gmail.com";
+  const email = "me@furkando.com";
   const { setIsOpen } = useContext(Contexto);
 
   function openModal() {

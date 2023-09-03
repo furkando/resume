@@ -21,10 +21,12 @@ export default function Experience({ resumeData }) {
                 <h3>{item.title}</h3>
                 <h4>{item.company}</h4>
                 <ul>
-                  <li>
-                    <span className="colorRed">- </span>
-                    <span>{item.description}</span>
-                  </li>
+                  {item.description.map((item) => (
+                    <li>
+                      <span className="colorRed">- </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             ))}

@@ -17,8 +17,8 @@ export default function Skills({ resumeData }) {
           <h2>Skills</h2>
         </header>
         <div className="breakMainTechOverall">
-          <div className="cardContainer skillsCard">
-            <div className="card">
+          <div className="cardContainer skillsCardContainer">
+            <div className="card skillsCard">
               <div className="mainTechCont">
                 <h3 className="skillsTitle">Main Tech</h3>
                 <div

@@ -170,6 +170,9 @@ a {
 }
 .sectionContExperience {
   margin-right: 1.2em;
+  height: 1550px;
+  overflow-y: auto;
+  border-radius: 0.9rem;
 }
 .sectionContExperience .card,
 .sectionContEducation .card {
@@ -645,7 +648,7 @@ a {
 
 .sectionContSkills {
   height: 100%;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0rem;
   margin-top: 1rem;
 }
 
@@ -669,8 +672,13 @@ a {
   margin: 0px 10px 0px 0px;
 }
 
-.skillsCard {
+.skillsCardContainer {
   height: 100%;
+  padding-bottom: 1.3em;
+}
+
+.skillsCard {
+  padding-bottom: 0% !important;
 }
 
 .tooltipCont {

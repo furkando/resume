@@ -33,7 +33,7 @@ export default function Banner() {
               <button className={`${styles.but}`}>
                 <a
                   target="_blank"
-                  href="https://furkandoganktf.github.io/resume/pdf/furkan_dogan_resume.pdf"
+                  href="https://furkando.github.io/resume/pdf/furkan_dogan_resume.pdf"
                 >
                   DOWNLOAD RESUME
                 </a>
@@ -41,13 +41,13 @@ export default function Banner() {
               <button className={`${styles.svgBut}`}>
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/furkandoganktf/"
+                  href="https://www.linkedin.com/in/furkando/"
                 >
                   <Linkedin />
                 </a>
               </button>
               <button className={`${styles.svgBut}`}>
-                <a target="_blank" href="https://github.com/furkandoganktf">
+                <a target="_blank" href="https://github.com/furkando">
                   <Github />
                 </a>
               </button>
@@ -61,7 +61,7 @@ export default function Banner() {
         <figure className={styles.bannerContRight}>
           <img
             alt="Furkan Doğan"
-            src="https://furkandoganktf.github.io/resume/images/profilePicture.jpg"
+            src="https://furkando.github.io/resume/images/profilePicture.jpg"
           />
         </figure>
       </div>

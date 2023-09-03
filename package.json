@@ -2,7 +2,7 @@
   "name": "nextjs-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://furkandoganktf.github.io/resume/",
+  "homepage": "https://furkando.github.io/resume/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

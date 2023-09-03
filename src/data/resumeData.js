@@ -10,12 +10,12 @@ export const resumeData = {
     email: "furkandoganktf@gmail.com",
     phone: "+90-531-356-1070",
     address: {
-      street: "İşçi Blokları Mahallesi",
+      street: "İncek",
       city: "Ankara",
       state: "Türkiye",
       zip: "06800",
     },
-    website: "https://www.furkandoganktf.com",
+    website: "https://www.furkando.com",
     resumedownload: "/resume/CV.pdf",
     social: [
       {
@@ -30,7 +30,7 @@ export const resumeData = {
       },
       {
         name: "linkedin",
-        url: "https://www.linkedin.com/in/furkandoganktf",
+        url: "https://www.linkedin.com/in/furkando",
         className: "fa fa-linkedin",
       },
       {
@@ -40,7 +40,7 @@ export const resumeData = {
       },
       {
         name: "github",
-        url: "http://github.com/furkandoganktf",
+        url: "http://github.com/furkando",
         className: "fa fa-github",
       },
       {
@@ -80,55 +80,76 @@ export const resumeData = {
         company: "Haystack Analytics",
         title: "Software Developer",
         years: "May 2021 - Present",
-        description: "Helping build data-driven software teams.",
+        description: [
+          "Spearheaded the migration and optimization of the entire analytics infrastructure, reducing dashboard load times from CloudFlare timeouts to under ~1 second, enabling efficient data- driven decision-making for engineering leaders.",
+          "Developed and introduced new metrics to quantify engineering productivity, facilitating data- driven insights and decisions.",
+          "Successfully managed a team of 6 developers, overseeing server setup, test and development infrastructure, and implementing automated CI/CD pipelines to streamline software development and deployment processes.",
+        ],
       },
       {
         company: "Bottomless",
         title: "Software Developer",
         years: "Dec 2020 - May 2021",
-        description:
-          "Building subscription system with React, Express.js and MongoDB.",
+        description: [
+          "Led bug resolution and system improvements, enhancing the reliability and efficiency of a smart subscription system.",
+          "Developed and optimized web pages using React, Express.js, and MongoDB, delivering seamless user experiences.",
+          "Implemented a fully automated data training pipeline utilizing AWS Sagemaker, S3, and CloudWatch, improving data analysis and modeling capabilities.",
+        ],
       },
       {
         company: "Neurocess Inc.",
         title: "Software Developer",
         years: "July 2019 - Dec 2020",
-        description:
-          "Building a real time sensor system with server and ui using python, nodeJS, React and RethinkDB.",
+        description: [
+          "As a founding engineer, pioneered the development of a real-time sensor system for injury prevention and training optimization.",
+          "Ensured the system's security, reliability, and maintainability by configuring servers for real- time data collection and visualization.",
+          "Developed machine learning models for data analysis and created a labeling application for datasets using Python and matplotlib.",
+          "Implemented Bluetooth and Wi-Fi connectivity between servers and sensors, enhancing data collection capabilities.",
+        ],
       },
       {
         company: "Quanimo",
         title: "Software Developer",
         years: "May 2019 - July 2019",
-        description:
-          "Worked on different projects by using Java Spring Boot, PostgreSQL. Developed 3 different web application from scratch.",
+        description: [
+          "Developed a video platform for medical students and an exam tracking system for primary and mid schools from scratch.",
+          "Leveraged Java Spring Boot, PostgreSQL, and React to create robust and user-friendly applications.",
+        ],
       },
       {
         company: "Otsimo",
         title: "Back-End Developer Intern",
         years: "June 2019 - August 2019",
-        description: "Summer internship with Go, gRPC and protocol buffers.",
+        description: [
+          "Contributed to various tasks, including generating weekly reports, transferring analytics data from MongoDB to BigQuery, and utilizing Go, gRPC, and protocol buffers.",
+          "Assisted in improving user analytics and data processing, enhancing the overall data analysis infrastructure.",
+        ],
       },
       {
         company: "Otsimo",
         title: "Alexa Developer",
         years: "February 2017 - September 2017",
-        description:
-          "Developed three skills for Alexa by using JavaScript and AWS.(Otsimo Letters, Otsimo Numbers, Autism Facts)",
+        description: [
+          "Developed and deployed multiple Alexa skills designed to help children learn numbers and letters by utilizing voice recognition capabilities.",
+        ],
       },
       {
         company: "Netas",
         title: "Software Engineer",
-        years: "September 2018 - December 2018",
-        description:
-          "Worked on E-Tuzel (Central Registry System) project by using Java Spring Boot, PrimeFaces and PostgreSQL.",
+        years: "June 2018 - December 2018",
+        description: [
+          "Contributed to the E-Tuzel (Central Registry System) project as a full-stack developer, focusing on the development of CRUD pages.",
+          "Assisted in tracking team member productivity by contributing open-source project gitinspector.",
+          "Gained experience in Java Spring Boot, Primefaces, and various database systems within a microservices architecture.",
+        ],
       },
       {
         company: "Netas",
         title: "Coop Intern",
         years: "June 2018 - September 2018",
-        description:
+        description: [
           "Developed a CRUD web app by using java spring boot and PrimeFaces.",
+        ],
       },
     ],
     skills: [
@@ -164,42 +185,6 @@ export const resumeData = {
       { name: "Web Development" },
       { name: "Database Management" },
       { name: "System Design" },
-    ],
-  },
-  portfolio: {
-    portfoliomessage: "Since i write mostly back-end you can not see them :)",
-    projects: [
-      {
-        title: "Neurocess",
-        category: "Real time sensor system for injury preventetion.",
-        image: "neurocess.png",
-        url: "https://www.neurocess.co/",
-      },
-      {
-        title: "Kardo",
-        category:
-          "Education app with 110k downloads developed with React Native.",
-        image: "kardo.png",
-        url: "https://apps.apple.com/tr/app/kardo-sınavlara-hazırlık/id1326561461?l=tr",
-      },
-      {
-        title: "TusFlix",
-        category: "Video portal for medicine students.",
-        image: "altun.png",
-        url: "https://www.altunfarmakoloji.com",
-      },
-    ],
-  },
-  testimonials: {
-    testimonials: [
-      {
-        text: "If opportunity doesn't knock, build a door.",
-        user: "Milton Berle",
-      },
-      {
-        text: "That Furkan Dogan must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet (Just kidding i am hired). Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        user: "Steve Wozniak",
-      },
     ],
   },
 };

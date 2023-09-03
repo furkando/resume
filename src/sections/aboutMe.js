@@ -41,7 +41,7 @@ export default function AboutMe() {
           </strong>
           ; also you are more than welcome to follow my work on my{" "}
           <strong>
-            <a target="_blank" href="https://github.com/furkandoganktf">
+            <a target="_blank" href="https://github.com/furkando">
               github
             </a>
           </strong>{" "}
@@ -49,7 +49,7 @@ export default function AboutMe() {
           <strong>
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/furkandoganktf/"
+              href="https://www.linkedin.com/in/furkando/"
             >
               linkedin
             </a>
